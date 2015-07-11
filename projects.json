@@ -1,0 +1,50 @@
+[
+  {
+    "name":"infinitydragonsofsac",
+    "url":"http://infinitydragonsofsac.org/",
+    "p_type":"personal",
+    "years":"2014-2015",
+    "image":"ids_home.png",
+    "summary":"Created for a team that I helped co-found in 2014, this is a responsive site to provide more information to the public such as upcoming/past races, announcements, practice map, and images from past events/races. The site is still being updated in terms of features as the team grow and the dragon boat community starting in the Sacramento area."
+  },
+  {
+    "name":"studentsfirst",
+    "url":"https://studentsfirst.org/",
+    "p_type":"professional",
+    "years":"2014-2015",
+    "image":"studentsfirst_home.png",
+    "summary":"As lead programmer working with a graphic designer and a programmer dealing with the data migration, we created this website from the ground up. Chose and customized the content management system that the legacy data was migrated to, implemented the back-end tools and interfaces for state teams, and connected with external third-party services. Worked with the graphic designer to make sure the site was responsive and the interactivity was consistent throughout the site. On the back-end, made sure it was configured that teams had access only to their respective areas and made the UI easy to understand and use."
+  },
+  {
+    "name":"reportcard-studentsfirst",
+    "url":"http://reportcard.studentsfirst.org/",
+    "p_type":"professional",
+    "years":"2013-2014",
+    "image":"reportcard_sf_home.png",
+    "summary":"This was the first major StudentsFirst web property that I worked on. I was lead programmer working with the graphic designer to create a new look away from the previous reportcard site and the organization's first property to be fully responsive. Other than using a MVC framework and some javascript libraries for interactivity, I hand-coded everything else. Some of the libraries that were used here included JVectorMap, Highcharts, and Bootstrap. The challenge was the amount of data we had to portray to the public and making sure it was not only accurate but understandable."
+  },
+  {
+    "name":"teachertownhall",
+    "url":"http://www.teachertownhall.org/",
+    "p_type":"professional",
+    "years":"2013",
+    "image":"tth_home.png",
+    "summary":"I coded this website from the ground up while working with the graphic designer to create a meaningful look. There were two external challenges with creating this website: one was that it needed a quick around for the meetings that were coming up and second was different aspects of the pages were constantly evolving and we also had to take into account that it needed constant updating after each town hall meetings passed. An unexpected technical problem was linking the YouTube responses in the Q&A sections all at once that created long load times; this was remedied by dynamically linking the videos when the questions are clicked on."
+  },
+  {
+    "name":"cartogratree",
+    "url":"http://dendrome.ucdavis.edu/cartogratree/",
+    "p_type":"professional",
+    "years":"2012-2013",
+    "image":"cartogratree_home.png",
+    "summary":"I was the full-stack developer for version 1 of the website portion of the project (it is version 3 as of 2015-07-10, but the layout and functionality of the interface is largely the same). My role was to create a map interface by which environmentalists and scientists were able to filter and select data points of tree samples to be sent for further analysis. I worked with the database programmer to make sure the relevant data points were sent here and worked with the back-end developer to make sure selected data are sent to the analytical services correctly. One of the biggest challenge here was the mere fact that I had to load over 15,000 data points from the internal databases in addition to the thousands of data points from external databases. This led to strong optimization of loading the map and allowing users to select individual or group of data points."
+  },
+  {
+    "name":"treegenes",
+    "url":"http://dendrome.ucdavis.edu/treegenes/",
+    "p_type":"professional",
+    "years":"2011-2013",
+    "image":"treegenes_home.png",
+    "summary":"I largely worked on optimizing the back end of the entire site (including the parent Dendrome site), creating new sections that enabled searching of other data resources that had no public interfaces, and improving the scripts that added/updated published data. Optimization included improving the way querying was done for all searches and the way databases are set up, cleaning up legacy code, creating templates, and collapsing duplicated sections of the website into single sources. The sections that I added were the summary pages for each data type, a third-party genome browser to showcase our sequence annotations, additional search interfaces, and new database tables to accommodate externally held data."
+  }
+]

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+        <script src="/js/app.js"></script>
+    </head>
+    <body ng-app="myPortfolio">
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!--<a class="navbar-brand" href="#">John Yu</a>-->
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+          	<li><a href="#about" class="smoothScroll">About</a></li>
+          	<li><a href="#pers" class="smoothScroll">Personal</a></li>
+          	<li><a href="#prof" class="smoothScroll">Professional</a></li>
+            <li><a href="#publ" class="smoothScroll">Publications</a></li>
+          </ul>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </nav>
+
+    <div class="hero card-panel">
+    	<div class="container">
+    		<div class="row">
+    			<div class="hero-col col-md-5 col-sm-5 col-xs-6">
+    				<p class="hero-col-name">John Yu</p>
+    			</div>
+    			<div class="hero-col col-md-2 col-sm-2 col-xs-6">
+    				<div class="prof_pic"></div>
+    			</div>
+    			<div class="hero-col col-md-5 col-sm-5">
+    				<p class="hero-col-info"><i class="fa fa-fw fa-user-secret"></i> Full-Stack Web Developer</p>
+    				<p class="hero-col-info"><i class="fa fa-fw fa-map-marker"></i> San Francisco, CA</p>
+    				<p class="hero-col-info"><a href="https://www.linkedin.com/in/johnjyu" target=new><i class="fa fa-fw fa-linkedin-square"></i> Profile <i class="fa fa-external-link"></i></a></p>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+
+    <div ng-controller="PageController as page">
+      <div class="scrollToMarker"><div name="about"></div></div>
+      <div class="container">
+        <!-- ABOUT ME SECTION -->
+        <div class="row">
+          <h3>About Me</h3>
+        </div>
+        <div class="card-panel">
+          <div class="row">
+            <div class="col-md-12">
+              <p>Technology speaks to me a lot because it is what we interact with on a daily basis and I like to stay informed on the latest and greatest. I keep up with tech blogs, browse through Kickstarter for the craziest (and even simple why-didn't-I-think-of-that) ideas, and interact with others like me. I also like to be hands-on as I like to carefully tear apart devices to see the inner-workings and building computers, both of which probably stems from my love for Legos.</p>
+              <p>Staying active is important to me because not only I want to stay healthy, I like to learn new sports. I'm not the type that actively keep up with professional sports (although I do cheer for my hometown San Francisco Giants, Golden State Warriors, and San Francisco 49ers!) but when given the opportunity to participate in a new sport, I jump at it. However, two of my favorite sports that I play is basketball and dragonboating. Basketball because I grew up playing it and dragonboating because there are almost no other sport in the world where you have at least 20 fellow teammates striving for one goal. </p>
+              <p>Between technology and sports, there is one commonality and that is I like to teach people when it comes to either subjects. I like informing friends what's the latest and coolest device or idea that's out. I like going into explaining how certain technology work. I like coaching and leading the dragonboat team, getting the best out of people.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="scrollToMarker"><div name="pers"></div></div>
+      <div class="container">
+        <!-- PERSONAL WORK SECTION -->
+        <div class="row">
+        	<h3>Personal Works</h3>
+        </div>
+        <div class="card-panel">
+          <work-section filterby="personal" ></work-section>
+        </div>
+      </div>
+
+      <div class="scrollToMarker"><div name="prof"></div></div>
+      <div class="container">
+        <!-- PROFESSIONAL WORK SECTION -->
+        <div class="row">
+          <div class="col-md-12">
+            <h3>Professional Works</h3>
+          </div>
+        </div>
+        <div class="card-panel">
+          <work-section filterby="professional"></work-section>
+        </div>
+      </div>
+
+      <div class="scrollToMarker"><div name="publ"></div></div>
+      <div class="container">
+        <!-- PUBLICATIONS SECTION -->
+        <div class="row">
+          <div class="col-md-12">
+            <h3>Publications</h3>
+          </div>
+        </div>
+
+        <div class="card-panel">
+          <div class="row" >
+            <div class="col-md-12">
+              <p><strong>"CartograTree: connecting tree genomes, phenotypes and environment"</strong><br/>Vasquez-Gross H.A., <strong>Yu J.J.</strong>, Figueroa B., Gessler D., Neale D., Wegrzyn J.L.<br/>Molecular Ecology Resources, vol. 13, issue 3,<br/>pp 528–537, May 2013. <a href="http://onlinelibrary.wiley.com/doi/10.1111/1755-0998.12067/abstract" target=new>doi: 10.1111/1755-0998.12067</a></p>
+              <p><strong>"Uniform standards for genome databases in forest and fruit trees"</strong><br/>Wegrzyn J.L., Main D., Figueroa B., Choi M., <strong>Yu J.</strong>, Neale D.B., Stanton M., Zheng P., Ficklin S., Cho I., Peace C., Evans K., Volk G., Oraguzie N., Chen C., Jr. F.G., Abbott A.G.<br/>Tree Genetics & Genomes, vol. 8, issue 3<br/>pp 549-557, June 2012. <a href="http://link.springer.com/article/10.1007/s11295-012-0494-7?null" target=new>doi:10.1007/s11295-012-0494-7</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <footer style="border-top:1px solid black;margin-top:15px;text-align:right;">
+          <p>&copy; John Yu 2015</p>
+        </footer>
+      </div> <!-- /container -->        
+    </div> <!-- ng-controller -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script async type="text/javascript" src="/js/jquery.scrollTo.min.js"></script>
+        <script src="js/main.js"></script>
+
+    </body>
+</html>

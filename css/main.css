@@ -1,0 +1,116 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-family:Verdana, Geneva, sans-serif;
+    color:darkgreen;
+    background-color:#efefef;
+}
+
+.navbar{
+	background:MediumSeaGreen ;
+}
+
+.nav li a{
+	color:white !important;
+}
+
+.nav li:hover{
+    background:green;
+}
+.prof_pic{
+	width: 120px;
+	height: 120px;
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	background: url(../assets/images/me.jpg) no-repeat;
+	margin:10px auto;
+}
+
+img{
+	width:100%;
+}
+
+h3{
+	text-align:center;
+	margin-bottom:25px;
+}
+
+hr{
+	width:75%;
+	border-width: 2px;
+	border-color: #d0d0d0;
+}
+
+
+.hero{
+	background:white;
+}
+
+.hero-col-name{
+	line-height: 140px;
+	margin:0;
+	font-size:4em;
+	text-align:center;
+}
+
+.hero-col-info{
+	font-size:1.3em;
+	line-height:45px;
+	vertical-align:middle;
+	margin:0;
+}
+
+.card-panel{
+	color:darkgreen;
+	background-color:#FFF;
+	padding:15px;
+	margin-bottom:20px;
+	border-radius:2px;
+	box-shadow:0 2px 2px 0 rgba(0,0,0,.16),0 0 2px 0 rgba(0,0,0,.12)
+}
+
+.scrollToMarker{
+	position:relative;
+}
+.scrollToMarker div{
+	position:absolute;
+	top:-50px;
+}
+
+@media screen and (max-width:767px){
+	.hero-col {
+		text-align:center;
+	}
+
+	.hero-col-name{
+		font-size:10vw;
+	}
+
+	.hero-col-info{
+		line-height: normal;
+		margin:10px 0px;
+	}
+
+	.works-img-container{
+		text-align:center;
+	}
+	.works-img{
+		width:80%;
+	}
+
+}
+
+@media screen and (min-width:991px){
+	.right{
+		float:right;
+	}
+}
+
+

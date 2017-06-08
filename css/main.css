@@ -67,6 +67,9 @@ hr{
 	margin:0;
 }
 
+.hero-col-info a:hover{
+	text-decoration: none;
+}
 .card-panel{
 	color:darkgreen;
 	background-color:#FFF;

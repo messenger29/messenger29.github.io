@@ -3,6 +3,7 @@
 		<div class="col-md-6 col-sm-8" ng-class-even="'right'"}>
 			<h4>{{work.name | uppercase}}</h4>
 			<p><strong>{{work.years}}</strong> {{work.summary}}</p>
+			<p><a href="{{work.url}}">Visit Website</a></p>
 		</div>
 		<div class="col-md-6 col-sm-4 works-img-container" ng-class-even="'right'">
 			<a ng-href="{{work.url}}" target="new"><img class="works-img" ng-src="/assets/images/{{work.image}}"></a>

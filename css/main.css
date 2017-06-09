@@ -23,6 +23,15 @@ body {
 .nav li:hover{
     background:green;
 }
+
+.navbar-default .navbar-toggle .icon-bar{
+	background-color: #ddd;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{
+	background-color: green;
+}
+
 .prof_pic{
 	width: 120px;
 	height: 120px;
@@ -93,12 +102,16 @@ hr{
 	}
 
 	.hero-col-name{
-		font-size:10vw;
+		line-height: normal;
 	}
 
 	.hero-col-info{
 		line-height: normal;
 		margin:10px 0px;
+	}
+	.hero-col-info a{
+		display: block;
+		margin-bottom: 10px;
 	}
 
 	.works-img-container{

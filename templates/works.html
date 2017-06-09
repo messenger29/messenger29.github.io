@@ -1,5 +1,5 @@
 <div ng-repeat="work in works | filter: {p_type:workCard.filterby}">
-	<div class="row">
+	<div class="row content-row">
 		<div class="col-md-6 col-sm-8" ng-class-even="'right'"}>
 			<h4>{{work.name | uppercase}}</h4>
 			<p><strong>{{work.years}}</strong> {{work.summary}}</p>

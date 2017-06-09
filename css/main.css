@@ -46,7 +46,7 @@ img{
 	width:100%;
 }
 
-h3{
+h2, h3{
 	text-align:center;
 	margin-bottom:25px;
 }
@@ -126,6 +126,10 @@ hr{
 @media screen and (min-width:991px){
 	.right{
 		float:right;
+	}
+
+	.content-row{
+		padding: 30px;
 	}
 }
 

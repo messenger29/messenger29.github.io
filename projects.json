@@ -21,7 +21,7 @@
     "p_type":"professional",
     "years":"2017",
     "image":"gse100_home.png",
-    "summary":""
+    "summary":"To celebrate the centennial and show off the rich history of the Stanford Graduate School of Education, different stakeholders got together to bring this website to life. This meant planning the user experience of the website to make sure we highlight everything without overwhelming a visitor. Different phases of the website was launched to coincide with different centennial events. The content dashboard was under special considerations to make sure everyone with varying backgrounds was able to contribute content. This website was implemented with Twig, PHP libraries, and a custom CMS that is decoupled from the front end. This also allows for future integrations into a mobile app via an API."
   },
   {
     "name":"stanford gse-it",
@@ -29,7 +29,7 @@
     "p_type":"professional",
     "years":"2016",
     "image":"gseit_home.png",
-    "summary":""
+    "summary":"This was a makeover of the former Stanford Graduate School of Education IT website and the goal was to streamline the content that would make sense to the faculty, staff, students, and visitors. Our team is not just your traditional tech support group; we provide additional services such as web development, app development, academic technologies, and so much more. Since we have a diverse offering of services, the challenge was not only to clean and update the relevant information but to work with all the team members to make sure all the content is cohesive. This website was implemented with a modified PHP CMS and custom styling."
   },
   {
     "name":"studentsfirst",
